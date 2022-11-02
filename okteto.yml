@@ -1,5 +1,5 @@
 build:
-      chat:
+      shadowsocks:
  
        image: shadowsocks/shadowsocks-libev:latest
 deploy:
