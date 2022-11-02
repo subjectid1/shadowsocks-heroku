@@ -9,9 +9,9 @@ dev:
   hello-world:
     command: bash
     sync:
-  - .:/usr/src/app
+      - .:/usr/src/app
     forward:
-  - 8080:hello-world:80
+      - 8080:hello-world:80
     environment:
     environment: development
     METHOD: rc4  
