@@ -7,7 +7,7 @@ deploy:
 sync:
   - .:/usr/src/app
 forward:
-  - 8080:80
+  - 8080:hello-world:80
 environment:
   environment: development
   METHOD: rc4  
