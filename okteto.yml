@@ -12,8 +12,8 @@ dev:
       - .:/usr/src/app
     forward:
       - 8080:hello-world:80
-    
-    environment: development
+  
+ 
   
 
   ## will be replaced by the value of $USER or by "peter" if the the variable USER doe not exist   DBPASSWORD: ## will be given the value of $DBPASSWORD if it exists
