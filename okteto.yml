@@ -1,9 +1,13 @@
-name: hello-world
-autocreate: true
-image: okteto/node:10
-command: bash
+build:
+ hello-world:
+ 
+ image: okteto/node:10
+ context: .
 deploy:
   - kubectl apply -f k8s.yml
+dev:
+  hello-world:
+    command: bash
 sync:
   - .:/usr/src/app
 forward:
