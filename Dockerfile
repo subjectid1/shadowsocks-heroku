@@ -1,15 +1,8 @@
-FROM node:14-slim
-
-# setup okteto message
-COPY bashrc /root/.bashrc
+FROM node:alpine
 
 WORKDIR /usr/src/app
-
-#ADD package.json .
-RUN npm install 
-
- 
-
-EXPOSE 80
-
-CMD npm start
+COPY package.json package-lock.json ./
+RUN npm install
+COPY . .
+EXPOSE 8080
+CMD [ "npm", "start" ]
