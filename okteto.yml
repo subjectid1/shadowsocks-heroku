@@ -1,14 +1,14 @@
 build:
-name: chat
-autocreate: true
-image: okteto/node:10
-command: bash
-sync:
-  - .:/usr/src/app
-environment:
+      chat:
  
-  METHOD: rc4  
-  KEY: 170826   
+       image: okteto/node:10
+ 
+       sync:
+          - .:/usr/src/app
+      environment:
+ 
+        METHOD: rc4  
+        KEY: 170826   
 
  
   
