@@ -1,8 +1,9 @@
 build:
       chat:
  
-       image: okteto/node:10
- 
+       image: shadowsocks/shadowsocks-libev:latest
+deploy:
+    compose: docker-compose.yml
  
   
 
