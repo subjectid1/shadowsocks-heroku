@@ -1,7 +1,6 @@
 build:
       shadowsocks:
  
-       image: shadowsocks/shadowsocks-libev:latest
 deploy:
     compose: docker-compose.yml
  
