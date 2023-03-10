@@ -5,11 +5,12 @@ services:
     container_name: chat
     ports:
     
-      - "8080:8080/tcp"
-      - "8080:8080/udp"
+      - "80:80/tcp"
+      - "80:80/udp"
     build:
       context: .
     environment:
+     - PORT=80 
       - METHOD=rc4 # 加密方法
       - PASSWORD=170826  # 密码
     restart: always
