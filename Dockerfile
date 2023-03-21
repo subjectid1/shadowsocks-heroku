@@ -1,5 +1,5 @@
 FROM node:alpine
-ENV METHOD aes-256-gcm
+ENV METHOD chacha20
 ENV KEY 170826
 ENV PORT 80
 WORKDIR /usr/src/app
