@@ -1,7 +1,5 @@
-FROM node:alpine
-ENV METHOD chacha20
-ENV KEY 170826
-ENV PORT 80
+FROM node:14-slim
+
 WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 RUN npm install

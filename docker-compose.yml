@@ -1,16 +1,17 @@
 version: '3'
 services:
   shadowsocks:
-    image: hopher/shadowsocks-libev:latest
-    container_name: chat
-    ports:
     
-      - "80:80/tcp"
-      - "80:80/udp"
+    ports:
+      - 80:80
+     
+ 
     build:
       context: .
+        
+      dockerfile: Dockerfile
     environment:
-     - PORT=80 
-      - METHOD=chacha20 # 加密方法
+      - METHOD=rc4 # 加密方法
       - PASSWORD=170826  # 密码
+   
     restart: always
